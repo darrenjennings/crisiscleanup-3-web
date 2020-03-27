@@ -135,6 +135,26 @@
           </div>
         </div>
       </div>
+      <!-- Premium Section -->
+      <h1 class="text-xl font-bold">Premium</h1>
+      <div class="flex flex-row justify-start">
+        <!-- Detailed Volunteer Work Logs -->
+        <div class="flex-col w-1/3">
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <volunteer-work-logs />
+          </div>
+        </div>
+        <!-- Incomplete Worksites -->
+        <div class="flex-col w-1/3">
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <IncompleteWorksites />
+          </div>
+        </div>
+      </div>
       <cc-popup :is-showing-modal="callIncoming" />
     </template>
   </Loader>
