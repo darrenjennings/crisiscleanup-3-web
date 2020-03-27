@@ -11,7 +11,7 @@
       >
       <!-- Favorite Section -->
       <h1 class="text-xl font-bold">Favorite</h1>
-      <div class="flex-row">
+      <div class="flex flex-row jusity-between">
         <!-- First Column -->
         <div class="flex-col">
           <!-- teammates invited -->
@@ -101,6 +101,26 @@
           </div>
         </div>
       </div>
+      <!-- Premium Section -->
+      <h1 class="text-xl font-bold">Premium</h1>
+      <div class="flex flex-row justify-start">
+        <!-- Detailed Volunteer Work Logs -->
+        <div class="flex-col w-1/3">
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <volunteer-work-logs />
+          </div>
+        </div>
+        <!-- Incomplete Worksites -->
+        <div class="flex-col w-1/3">
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <IncompleteWorksites />
+          </div>
+        </div>
+      </div>
       <cc-popup :is-showing-modal="callIncoming" />
     </template>
   </Loader>
@@ -121,6 +141,8 @@ import LongestWaitTime from '@/components/reports/LongestWaitTime.vue';
 import AvgWaitTime from '@/components/reports/AvgWaitTime.vue';
 import UnassignedWorksites from '@/components/reports/UnassignedWorksites.vue';
 import WorksiteCompletion from '@/components/reports/WorksiteCompletion.vue';
+import VolunteerWorkLogs from '@/components/reports/VolunteerWorkLogs.vue';
+import IncompleteWorksites from '@/components/reports/IncompleteWorksites.vue';
 
 export default {
   name: 'ReportsTab',
@@ -137,6 +159,8 @@ export default {
     UnassignedWorksites,
     LongestWaitTime,
     WorksiteCompletion,
+    VolunteerWorkLogs,
+    IncompleteWorksites,
   },
   data() {
     return {
