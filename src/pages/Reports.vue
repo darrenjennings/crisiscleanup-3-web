@@ -145,7 +145,7 @@ import VolunteerWorkLogs from '@/components/reports/VolunteerWorkLogs.vue';
 import IncompleteWorksites from '@/components/reports/IncompleteWorksites.vue';
 
 export default {
-  name: 'ReportsTab',
+  name: 'Reports',
   components: {
     Loader,
     TeammatesInvited,
