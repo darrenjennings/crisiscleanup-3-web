@@ -86,6 +86,55 @@
           </div>
         </div>
       </div>
+      <!-- Free Section -->
+      <h1 class="text-xl font-bold">Free</h1>
+      <div class="flex flex-row justify-between">
+        <!-- First Column -->
+        <div class="flex-col">
+          <!-- Commercial Value -->
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <est-commercial-value />
+          </div>
+          <!-- Shortest Wait Time -->
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <shortest-wait-time />
+          </div>
+        </div>
+        <!-- Second Column -->
+        <div class="flex-col">
+          <!-- Avg Wait Time -->
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <avg-wait-time />
+          </div>
+          <!-- Unassigned Worksites -->
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <unassigned-worksites />
+          </div>
+        </div>
+        <!-- Third Column -->
+        <div class="flex-col">
+          <!-- Longest Wait Time -->
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <longest-wait-time />
+          </div>
+          <!-- Worksite Completion -->
+          <div
+            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <worksite-completion />
+          </div>
+        </div>
+      </div>
       <cc-popup :is-showing-modal="callIncoming" />
     </template>
   </Loader>
