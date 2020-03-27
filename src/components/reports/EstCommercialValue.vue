@@ -1,14 +1,18 @@
 <template>
   <div>
-    <div class="flex-col m-5">
-      <div class="flex flex-row">
-        <base-text variant="h1">Est. Commercial Value of Services</base-text>
-        <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" />
+    <div class="flex flex-col justify-around">
+      <div class="m-5">
+        <div class="flex flex-row">
+          <base-text variant="body" weight="700"
+            >Est. Commercial Value of Services</base-text
+          >
+          <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" />
+        </div>
+        <base-text variant="bodysm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </base-text>
       </div>
-      <base-text variant="body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </base-text>
     </div>
   </div>
 </template>
