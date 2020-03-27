@@ -22,7 +22,6 @@ import store from '@/store/index';
 import Vue from 'vue';
 import VueCookies from 'vue-cookies';
 import VueRouter from 'vue-router';
-import Map from '@/pages/unauthenticated/Map';
 import Reports from '@/pages/Reports';
 
 Vue.use(VueRouter);
@@ -150,99 +149,6 @@ const routes = [
     component: Location,
     name: 'nav.edit_location',
     meta: { layout: 'authenticated' },
-  },
-  {
-    path: '/reports',
-    component: Reports,
-    name: 'nav.reports',
-    meta: { layout: 'authenticated' },
-  },
-  {
-    path: '/login',
-    component: Login,
-    name: 'nav.login',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/invitation_token/:token',
-    component: InvitationSignup,
-    name: 'nav.invitation_token',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/print_token/:token',
-    component: PrintToken,
-    name: 'nav.print_token',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/request_access',
-    component: RequestAccess,
-    name: 'nav.request_access',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/register',
-    component: RegisterOrganization,
-    name: 'nav.register',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/assessment/:incident_id',
-    component: PreliminaryAssessment,
-    name: 'nav.assessment',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/terms',
-    component: Terms,
-    name: 'nav.terms',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/privacy',
-    component: Privacy,
-    name: 'nav.privacy',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/map',
-    component: Map,
-    name: 'nav.privacy',
-    meta: { layout: 'unauthenticated', noAuth: true },
-  },
-  {
-    path: '/sp/login',
-    name: 'SSOLogin',
-    beforeEnter: async (to, from, next) => {
-      if (store.getters['auth/isLoggedIn']) {
-        const creds = await SSO.authenticate();
-        // Store AWS Connect Auth Cookies
-        Vue.$cookies.set(
-          'lily-auth-prod-iad',
-          creds.AccessToken,
-          '/',
-          creds.AccessTokenExpiration,
-          'crisiscleanup3.awsapps.com',
-          true,
-        );
-        Vue.$cookies.set(
-          'lily-auth-refresh-prod-iad',
-          creds.RefreshToken,
-          '/connect/auth',
-          creds.RefreshTokenExpiration,
-          'crisiscleanup3.awsapps.com',
-          true,
-        );
-      }
-      next({ name: 'nav.dashboard' });
-    },
-  },
-  {
-    path: '/training',
-    component: TrainingPage,
-    name: 'nav.training',
-    meta: { layout: 'unauthenticated', noAuth: true },
   },
   ...PhoneRoutes,
   ...AdminRoutes,
