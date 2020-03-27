@@ -13,7 +13,7 @@
       <h1 class="text-xl font-bold m-2 ml-3">Favorite</h1>
       <div class="flex flex-row jusity-between">
         <!-- First Column -->
-        <div class="flex-col">
+        <div class="flex-col w-1/3">
           <!-- teammates invited -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <TeammatesInvited />
@@ -24,7 +24,7 @@
           </div>
         </div>
         <!-- Second Column -->
-        <div class="flex-col">
+        <div class="flex-col w-1/3">
           <!-- Active Teammates -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <ActiveTeammates />
@@ -35,7 +35,7 @@
           </div>
         </div>
         <!-- Third Column -->
-        <div class="flex-col">
+        <div class="flex-col w-1/3">
           <!-- Inactive Teammates -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <InactiveTeammates />
@@ -46,7 +46,7 @@
       <h1 class="text-xl font-bold">Free</h1>
       <div class="flex flex-row justify-between">
         <!-- First Column -->
-        <div class="flex-col">
+        <div class="flex-col w-1/3">
           <!-- Commercial Value -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <est-commercial-value />
@@ -57,7 +57,7 @@
           </div>
         </div>
         <!-- Second Column -->
-        <div class="flex-col">
+        <div class="flex-col w-1/3">
           <!-- Avg Wait Time -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <avg-wait-time />
@@ -68,7 +68,7 @@
           </div>
         </div>
         <!-- Third Column -->
-        <div class="flex-col">
+        <div class="flex-col w-1/3">
           <!-- Longest Wait Time -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <longest-wait-time />
