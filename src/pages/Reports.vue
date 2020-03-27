@@ -92,45 +92,33 @@
         <!-- First Column -->
         <div class="flex-col">
           <!-- Commercial Value -->
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <est-commercial-value />
           </div>
           <!-- Shortest Wait Time -->
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <shortest-wait-time />
           </div>
         </div>
         <!-- Second Column -->
         <div class="flex-col">
           <!-- Avg Wait Time -->
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <avg-wait-time />
           </div>
           <!-- Unassigned Worksites -->
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <unassigned-worksites />
           </div>
         </div>
         <!-- Third Column -->
         <div class="flex-col">
           <!-- Longest Wait Time -->
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <longest-wait-time />
           </div>
           <!-- Worksite Completion -->
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <worksite-completion />
           </div>
         </div>
@@ -140,17 +128,13 @@
       <div class="flex flex-row justify-start">
         <!-- Detailed Volunteer Work Logs -->
         <div class="flex-col w-1/3">
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <volunteer-work-logs />
           </div>
         </div>
         <!-- Incomplete Worksites -->
         <div class="flex-col w-1/3">
-          <div
-            class="my-2 mx-3 bg-white shadow h-auto content-center flex-wrap"
-          >
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <IncompleteWorksites />
           </div>
         </div>
