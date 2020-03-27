@@ -164,6 +164,12 @@ export default {
           to: '/admin',
           disabled: !this.currentUser.isAdmin,
         },
+        {
+          key: 'reports',
+          icon: 'history',
+          text: this.$t('dashboard.reports'),
+          to: '/reports',
+        },
       ];
     },
     ...mapState('incident', ['currentIncidentId']),
