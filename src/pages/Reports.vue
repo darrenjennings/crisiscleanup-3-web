@@ -87,7 +87,7 @@
         </div>
       </div>
       <!-- Free Section -->
-      <h1 class="text-xl font-bold">Free</h1>
+      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Free</h1>
       <div class="flex flex-row justify-between">
         <!-- First Column -->
         <div class="flex-col w-1/3">
@@ -124,7 +124,7 @@
         </div>
       </div>
       <!-- Premium Section -->
-      <h1 class="text-xl font-bold">Premium</h1>
+      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Premium</h1>
       <div class="flex flex-row justify-start">
         <!-- Detailed Volunteer Work Logs -->
         <div class="flex-col w-1/3">
