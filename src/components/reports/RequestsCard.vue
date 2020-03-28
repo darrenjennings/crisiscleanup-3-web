@@ -3,14 +3,15 @@
     <div class="flex flex-col justify-around">
       <div class="m-5">
         <div class="flex flex-row">
-          <base-text variant="body" weight="700">Teammates Invited</base-text>
+          <base-text variant="body" weight="700"
+            >Requests by County and Type</base-text
+          >
           <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
           <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" />
         </div>
         <base-text variant="bodysm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras
-          ornare arcu dui vivamus.
+          This is a breakdown of requests for help by county affected and then
+          detailed by the type of work requested and its age and status.
         </base-text>
       </div>
     </div>
@@ -19,6 +20,6 @@
 
 <script>
 export default {
-  name: 'TeammatesInvited',
+  name: 'RequestsCard',
 };
 </script>

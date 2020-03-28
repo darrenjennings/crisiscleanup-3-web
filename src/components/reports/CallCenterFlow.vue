@@ -3,14 +3,16 @@
     <div class="flex flex-col justify-around">
       <div class="m-5">
         <div class="flex flex-row">
-          <base-text variant="body" weight="700">Active Teammates</base-text>
+          <base-text variant="body" weight="700"
+            >Call Center Flow Report</base-text
+          >
           <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
           <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" />
         </div>
         <base-text variant="bodysm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras
-          ornare arcu dui vivamus.
+          This is an overview of the number of calls coming into the call center
+          each day broken down by new or follow up calls, return call rates, and
+          volunteer operator performance.
         </base-text>
       </div>
     </div>
@@ -19,6 +21,6 @@
 
 <script>
 export default {
-  name: 'ActiveTeammates',
+  name: 'CallCenterFlow',
 };
 </script>

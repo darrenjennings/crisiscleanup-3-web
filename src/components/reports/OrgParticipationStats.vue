@@ -3,14 +3,16 @@
     <div class="flex flex-col justify-around">
       <div class="m-5">
         <div class="flex flex-row">
-          <base-text variant="body" weight="700">Completed Worksites</base-text>
+          <base-text variant="body" weight="700"
+            >Organization Participation Statistics</base-text
+          >
           <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
           <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" />
         </div>
         <base-text variant="bodysm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras
-          ornare arcu dui vivamus.
+          This is a breakdown of the Organizations with access to an incident
+          and the types of participation and activities and services performed
+          as it relates to the properties requesting assistance
         </base-text>
       </div>
     </div>
@@ -19,6 +21,6 @@
 
 <script>
 export default {
-  name: 'CompletedWorksites',
+  name: 'ParticipationStats',
 };
 </script>

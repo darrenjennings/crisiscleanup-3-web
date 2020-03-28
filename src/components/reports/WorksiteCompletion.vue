@@ -7,8 +7,8 @@
           <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" />
         </div>
         <base-text variant="bodysm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          This is a detailed breakdown of services requested and what items
+          remain both open and completed.
         </base-text>
       </div>
     </div>

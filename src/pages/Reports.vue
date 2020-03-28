@@ -9,89 +9,82 @@
         >You have 2 paid report activate them to see more information about your
         team members</base-text
       >
-      <!-- Favorite Section -->
-      <h1 class="text-xl font-bold m-2 ml-3">Favorite</h1>
+      <!-- Included -->
+      <h1 class="text-xl font-bold m-2 ml-3">Included</h1>
+      <!-- <div class="flex flex-row jusity-between">
+         First Column
+        <div class="flex-col w-1/3">
+        download csv
+          </div>
+        </div>
+      </div> -->
+      <!-- Favorites -->
+      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Favorites</h1>
+      <!-- <div class="flex flex-row justify-between">
+        First Column
+        <div class="flex-col w-1/3">
+        </div>
+        Second Column
+        <div class="flex-col w-1/3">
+        </div>
+        Third Column
+        <div class="flex-col w-1/3">
+        </div>
+      </div> -->
+      <!-- Report Library -->
+      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Report Library</h1>
       <div class="flex flex-row jusity-between">
         <!-- First Column -->
         <div class="flex-col w-1/3">
-          <!-- teammates invited -->
+          <!-- teammate invitation -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <TeammatesInvited />
+            <teammate-invitation />
           </div>
           <!-- Claimed Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <ClaimedWorksites />
+          </div>
+          <!-- Estimated Commercial Values -->
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <est-commercial-value />
+          </div>
+          <!-- Incident Status Report -->
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <incident-status-report />
           </div>
         </div>
         <!-- Second Column -->
         <div class="flex-col w-1/3">
           <!-- Active Teammates -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <ActiveTeammates />
+            <requests-card />
           </div>
           <!-- Completed Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <CompletedWorksites />
-          </div>
-        </div>
-        <!-- Third Column -->
-        <div class="flex-col w-1/3">
-          <!-- Inactive Teammates -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <InactiveTeammates />
-          </div>
-        </div>
-      </div>
-      <!-- Free Section -->
-      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Free</h1>
-      <div class="flex flex-row justify-between">
-        <!-- First Column -->
-        <div class="flex-col w-1/3">
-          <!-- Commercial Value -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <est-commercial-value />
-          </div>
-          <!-- Shortest Wait Time -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <shortest-wait-time />
-          </div>
-        </div>
-        <!-- Second Column -->
-        <div class="flex-col w-1/3">
-          <!-- Avg Wait Time -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <avg-wait-time />
-          </div>
-          <!-- Unassigned Worksites -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <unassigned-worksites />
-          </div>
-        </div>
-        <!-- Third Column -->
-        <div class="flex-col w-1/3">
-          <!-- Longest Wait Time -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <longest-wait-time />
+            <completion-summary />
           </div>
           <!-- Worksite Completion -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <worksite-completion />
           </div>
-        </div>
-      </div>
-      <!-- Premium Section -->
-      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Premium</h1>
-      <div class="flex flex-row justify-start">
-        <!-- Detailed Volunteer Work Logs -->
-        <div class="flex-col w-1/3">
+          <!-- Call Center Flow -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <volunteer-work-logs />
+            <call-center-flow />
           </div>
         </div>
-        <!-- Incomplete Worksites -->
+        <!-- Third Column -->
         <div class="flex-col w-1/3">
+          <!-- Unassigned Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <IncompleteWorksites />
+            <unassigned-worksites />
+          </div>
+          <!-- Org Participation Status -->
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <participation-stats />
+          </div>
+          <!-- Volunteer Work Logs -->
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <volunteer-work-logs />
           </div>
         </div>
       </div>
@@ -104,37 +97,31 @@
 import User from '@/models/User';
 import { mapActions, mapGetters } from 'vuex';
 import Loader from '@/components/Loader.vue';
-import TeammatesInvited from '@/components/reports/TeammatesInvited.vue';
-import ClaimedWorksites from '@/components/reports/ClaimedWorksites.vue';
-import ActiveTeammates from '@/components/reports/ActiveTeammates.vue';
-import CompletedWorksites from '@/components/reports/CompletedWorksites.vue';
-import InactiveTeammates from '@/components/reports/InactiveTeammates.vue';
+import TeammateInvitation from '@/components/reports/TeammateInvitation.vue';
 import EstCommercialValue from '@/components/reports/EstCommercialValue.vue';
-import ShortestWaitTime from '@/components/reports/ShortestWaitTime.vue';
-import LongestWaitTime from '@/components/reports/LongestWaitTime.vue';
-import AvgWaitTime from '@/components/reports/AvgWaitTime.vue';
 import UnassignedWorksites from '@/components/reports/UnassignedWorksites.vue';
 import WorksiteCompletion from '@/components/reports/WorksiteCompletion.vue';
 import VolunteerWorkLogs from '@/components/reports/VolunteerWorkLogs.vue';
-import IncompleteWorksites from '@/components/reports/IncompleteWorksites.vue';
+import RequestsCard from '@/components/reports/RequestsCard.vue';
+import CompletionSummary from '@/components/reports/CompletionSummary.vue';
+import ParticipationStats from '@/components/reports/OrgParticipationStats.vue';
+import IncidentStatusReport from '@/components/reports/IncidentStatusReport.vue';
+import CallCenterFlow from '@/components/reports/CallCenterFlow.vue';
 
 export default {
   name: 'Reports',
   components: {
     Loader,
-    TeammatesInvited,
-    ClaimedWorksites,
-    ActiveTeammates,
-    CompletedWorksites,
-    InactiveTeammates,
+    TeammateInvitation,
     EstCommercialValue,
-    ShortestWaitTime,
-    AvgWaitTime,
     UnassignedWorksites,
-    LongestWaitTime,
     WorksiteCompletion,
     VolunteerWorkLogs,
-    IncompleteWorksites,
+    RequestsCard,
+    CompletionSummary,
+    ParticipationStats,
+    IncidentStatusReport,
+    CallCenterFlow,
   },
   data() {
     return {
