@@ -11,6 +11,28 @@
       >
       <!-- Included -->
       <h1 class="text-xl font-bold m-2 ml-3">Included</h1>
+      <!-- <div class="flex flex-row jusity-between">
+         First Column
+        <div class="flex-col w-1/3">
+        download csv
+          </div>
+        </div>
+      </div> -->
+      <!-- Favorites -->
+      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Favorites</h1>
+      <!-- <div class="flex flex-row justify-between">
+        First Column
+        <div class="flex-col w-1/3">
+        </div>
+        Second Column
+        <div class="flex-col w-1/3">
+        </div>
+        Third Column
+        <div class="flex-col w-1/3">
+        </div>
+      </div> -->
+      <!-- Report Library -->
+      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Report Library</h1>
       <div class="flex flex-row jusity-between">
         <div class="flex-col w-1/3">
           <div class="my-2 mx-3 bg-white shadow h-20 content-center flex-wrap">
@@ -36,23 +58,21 @@
       <div class="flex flex-row jusity-between">
         <!-- First Column -->
         <div class="flex-col w-1/3">
-          <!-- Worksite Completion -->
-          <div class="my-2 mx-3 bg-white shadow h-24 content-center flex-wrap">
-            <base-button @:click="alert(ActivationPopUp)">
-              <worksite-completion />
-            </base-button>
+          <!-- teammate invitation -->
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <teammate-invitation />
           </div>
           <!-- teammate invitation -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <teammate-invitation />
           </div>
-          <!-- Incident Status Report -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <incident-status-report />
+          <!-- Estimated Commercial Values -->
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <est-commercial-value />
           </div>
-          <!-- Org Participation Status -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <participation-stats />
+          <!-- Incident Status Report -->
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <incident-status-report />
           </div>
         </div>
         <!-- Second Column -->
@@ -65,77 +85,28 @@
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <completion-summary />
           </div>
-          <!-- Volunteer Work Logs -->
+          <!-- Worksite Completion -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <volunteer-work-logs />
+            <worksite-completion />
           </div>
           <!-- Call Center Flow -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <call-center-flow />
           </div>
         </div>
         <!-- Third Column -->
         <div class="flex-col w-1/3">
           <!-- Unassigned Worksites -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <unassigned-worksites />
-          </div>
-          <!-- Estimated Commercial Values -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <est-commercial-value />
-          </div>
-        </div>
-      </div>
-      <!-- Free Section -->
-      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Free</h1>
-      <div class="flex flex-row justify-between">
-        <!-- First Column -->
-        <div class="flex-col w-1/3">
-          <!-- Commercial Value -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <est-commercial-value />
-          </div>
-          <!-- Shortest Wait Time -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <shortest-wait-time />
-          </div>
-        </div>
-        <!-- Second Column -->
-        <div class="flex-col w-1/3">
-          <!-- Avg Wait Time -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <avg-wait-time />
-          </div>
-          <!-- Unassigned Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <unassigned-worksites />
           </div>
-        </div>
-        <!-- Third Column -->
-        <div class="flex-col w-1/3">
-          <!-- Longest Wait Time -->
+          <!-- Org Participation Status -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <longest-wait-time />
+            <participation-stats />
           </div>
-          <!-- Worksite Completion -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <worksite-completion />
-          </div>
-        </div>
-      </div>
-      <!-- Premium Section -->
-      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Premium</h1>
-      <div class="flex flex-row justify-start">
-        <!-- Detailed Volunteer Work Logs -->
-        <div class="flex-col w-1/3">
+          <!-- Volunteer Work Logs -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <volunteer-work-logs />
-          </div>
-        </div>
-        <!-- Incomplete Worksites -->
-        <div class="flex-col w-1/3">
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <IncompleteWorksites />
           </div>
         </div>
       </div>
@@ -158,7 +129,6 @@ import CompletionSummary from '@/components/reports/CompletionSummary.vue';
 import ParticipationStats from '@/components/reports/OrgParticipationStats.vue';
 import IncidentStatusReport from '@/components/reports/IncidentStatusReport.vue';
 import CallCenterFlow from '@/components/reports/CallCenterFlow.vue';
-import DownloadCSV from '@/components/reports/DownloadCSV.vue';
 
 export default {
   name: 'Reports',
@@ -174,7 +144,6 @@ export default {
     ParticipationStats,
     IncidentStatusReport,
     CallCenterFlow,
-    DownloadCSV,
   },
   data() {
     return {
