@@ -40,10 +40,6 @@
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <teammate-invitation />
           </div>
-          <!-- Claimed Worksites -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <ClaimedWorksites />
-          </div>
           <!-- Estimated Commercial Values -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <est-commercial-value />
