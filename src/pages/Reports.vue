@@ -58,21 +58,21 @@
       <div class="flex flex-row jusity-between">
         <!-- First Column -->
         <div class="flex-col w-1/3">
-          <!-- teammate invitation -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <teammate-invitation />
+          <!-- Worksite Completion -->
+          <div class="my-2 mx-3 bg-white shadow h-24 content-center flex-wrap">
+            <worksite-completion />
           </div>
           <!-- teammate invitation -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <teammate-invitation />
-          </div>
-          <!-- Estimated Commercial Values -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <est-commercial-value />
           </div>
           <!-- Incident Status Report -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
             <incident-status-report />
+          </div>
+          <!-- Org Participation Status -->
+          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
+            <participation-stats />
           </div>
         </div>
         <!-- Second Column -->
@@ -85,28 +85,24 @@
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
             <completion-summary />
           </div>
-          <!-- Worksite Completion -->
+          <!-- Volunteer Work Logs -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <worksite-completion />
+            <volunteer-work-logs />
           </div>
           <!-- Call Center Flow -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
             <call-center-flow />
           </div>
         </div>
         <!-- Third Column -->
         <div class="flex-col w-1/3">
           <!-- Unassigned Worksites -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
             <unassigned-worksites />
           </div>
-          <!-- Org Participation Status -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <participation-stats />
-          </div>
-          <!-- Volunteer Work Logs -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <volunteer-work-logs />
+          <!-- Estimated Commercial Values -->
+          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
+            <est-commercial-value />
           </div>
         </div>
       </div>
