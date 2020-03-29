@@ -2,19 +2,24 @@
   <div>
     <base-button
       variant="outline"
-      :action="
-        () => {
-          isShowingModal = true;
-        }
-      "
+      :action="() => (isShowingModal = true)"
       text="Show Modal"
     ></base-button>
     <modal
       v-if="isShowingModal"
       title="Reports Activation"
       modal-classes="w-108"
+      @ok="isShowingModal = false"
       @close="isShowingModal = false"
     >
+      <div
+        slot="header"
+        class="flex p-1 justify-start bg-crisiscleanup-dark-400 text-white"
+      >
+        <base-text variant="body" weight="700" class="m-3 ml-5">
+          Report Activation
+        </base-text>
+      </div>
       <div class="flex justify-around m-5">
         <base-text variant="body">
           Your state does not yet have a subscription to this section.
@@ -29,7 +34,12 @@
       <div slot="footer" class="flex p-1 justify-center">
         <base-button
           variant="outline"
-          :action="() => (isShowingModal = false)"
+          :action="
+            () => {
+              isShowingModal = false;
+            }
+          "
+          text="mmk"
         ></base-button>
       </div>
     </modal>
