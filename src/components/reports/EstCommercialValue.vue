@@ -6,7 +6,8 @@
           <base-text variant="body" weight="700"
             >Estimated Commercial Value of Services</base-text
           >
-          <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" />
+          <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
+          <!-- <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" /> -->
         </div>
         <base-text variant="bodysm">
           This report calculates the estimated commercial value of services

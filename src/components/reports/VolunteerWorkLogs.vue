@@ -7,7 +7,7 @@
             >Detailed Work Logs with Volunteer Hour Reports</base-text
           >
           <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
-          <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" />
+          <!-- <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" /> -->
         </div>
         <base-text variant="bodysm">
           This report allows for easy extraction of detailed work logs filtered

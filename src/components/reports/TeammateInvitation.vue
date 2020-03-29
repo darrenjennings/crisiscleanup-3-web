@@ -2,12 +2,12 @@
   <div>
     <div class="flex flex-col justify-around">
       <div class="m-5">
-        <div class="flex flex-row">
+        <div class="flex flex-row justify-start">
           <base-text variant="body" weight="700"
             >Teammate Invitation and Activity Report</base-text
           >
-          <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
-          <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" />
+          <img src="@/assets/greylockss.jpg" class="h-8 px-3 ml-auto" />
+          <!-- <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" /> -->
         </div>
         <base-text variant="bodysm">
           This is a quick glance at all those you have invited for your

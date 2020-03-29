@@ -7,7 +7,7 @@
             >Completion Rates Summary</base-text
           >
           <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
-          <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" />
+          <!-- <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" /> -->
         </div>
         <base-text variant="bodysm">
           This report breaks down the completion rate numbers by Shortest,

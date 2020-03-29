@@ -7,7 +7,7 @@
             >Organization Participation Statistics</base-text
           >
           <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
-          <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" />
+          <!-- <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" /> -->
         </div>
         <base-text variant="bodysm">
           This is a breakdown of the Organizations with access to an incident

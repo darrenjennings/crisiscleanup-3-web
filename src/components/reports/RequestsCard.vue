@@ -7,7 +7,7 @@
             >Requests by County and Type</base-text
           >
           <img src="@/assets/greylockss.jpg" class="h-8 px-3" />
-          <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" />
+          <!-- <img src="@/assets/yellowstarss.jpg" class="ml-auto h-8" /> -->
         </div>
         <base-text variant="bodysm">
           This is a breakdown of requests for help by county affected and then

@@ -7,7 +7,8 @@
             >Number of open, unassigned worksites claimed for more than 6
             days</base-text
           >
-          <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" />
+          <img src="@/assets/greylockss.jpg" class="h-8 px-3 ml-auto" />
+          <!-- <img src="@/assets/outlinestarss.jpg" class="ml-auto h-8" /> -->
         </div>
         <base-text variant="bodysm" class="pt-2">
           This report helps identify items that have been claimed but may not
