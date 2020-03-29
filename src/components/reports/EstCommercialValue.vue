@@ -16,7 +16,7 @@
           <a
             href="http://blog.crisiscleanup.org/2017/10/how-we-calculate-value-of-services.html"
             class="text-crisiscleanup-yellow-900 underline"
-            >Click here</a
+            >click here</a
           >
         </base-text>
       </div>
