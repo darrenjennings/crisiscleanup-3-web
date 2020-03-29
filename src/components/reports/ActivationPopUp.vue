@@ -2,30 +2,19 @@
   <div>
     <base-button
       variant="outline"
-      :action="() => (isShowingModal = true)"
+      :action="
+        () => {
+          isShowingModal = true;
+        }
+      "
       text="Show Modal"
     ></base-button>
     <modal
       v-if="isShowingModal"
       title="Reports Activation"
       modal-classes="w-108"
-      @ok="isShowingModal = false"
       @close="isShowingModal = false"
     >
-      <div
-        slot="header"
-        class="flex p-1 justify-between bg-crisiscleanup-dark-400 text-white"
-      >
-        <div class="flex flex-row">
-          <base-text variant="body" weight="700" class="m-3 ml-5">
-            Report Activation
-          </base-text>
-          <base-button
-            :action="() => (isShowingModal = false)"
-            ccu-icon="cancel"
-          ></base-button>
-        </div>
-      </div>
       <div class="flex justify-around m-5">
         <base-text variant="body">
           Your state does not yet have a subscription to this section.
