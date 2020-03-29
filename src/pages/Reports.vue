@@ -11,13 +11,13 @@
       >
       <!-- Included -->
       <h1 class="text-xl font-bold m-2 ml-3">Included</h1>
-      <!-- <div class="flex flex-row jusity-between">
-         First Column
+      <div class="flex flex-row jusity-between">
         <div class="flex-col w-1/3">
-        download csv
+          <div class="my-2 mx-3 bg-white shadow h-20 content-center flex-wrap">
+            <DownloadCSV />
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- Favorites -->
       <h1 class="text-xl font-bold m-2 ml-3 pt-5">Favorites</h1>
       <!-- <div class="flex flex-row justify-between">
@@ -106,6 +106,7 @@
           </div>
         </div>
       </div>
+      <ActivationPopUp />
       <cc-popup :is-showing-modal="callIncoming" />
     </template>
   </Loader>
@@ -125,6 +126,8 @@ import CompletionSummary from '@/components/reports/CompletionSummary.vue';
 import ParticipationStats from '@/components/reports/OrgParticipationStats.vue';
 import IncidentStatusReport from '@/components/reports/IncidentStatusReport.vue';
 import CallCenterFlow from '@/components/reports/CallCenterFlow.vue';
+import ActivationPopUp from '@/components/reports/ActivationPopUp.vue';
+import DownloadCSV from '@/components/reports/DownloadCSV.vue';
 
 export default {
   name: 'Reports',
@@ -140,6 +143,8 @@ export default {
     ParticipationStats,
     IncidentStatusReport,
     CallCenterFlow,
+    ActivationPopUp,
+    DownloadCSV,
   },
   data() {
     return {
