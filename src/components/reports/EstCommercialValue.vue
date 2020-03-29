@@ -12,10 +12,12 @@
         <base-text variant="bodysm">
           This report calculates the estimated commercial value of services
           rendered based on the type of work being performed on each property.
-          For more details on how theses calculations are performed, click here.
-          <base-link
-            src="http://blog.crisiscleanup.org/2017/10/how-we-calculate-value-of-services.html"
-          />
+          For more details on how theses calculations are performed,
+          <a
+            href="http://blog.crisiscleanup.org/2017/10/how-we-calculate-value-of-services.html"
+            class="text-crisiscleanup-yellow-900 underline"
+            >Click here</a
+          >
         </base-text>
       </div>
     </div>
