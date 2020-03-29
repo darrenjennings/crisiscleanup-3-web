@@ -38,7 +38,9 @@
         <div class="flex-col w-1/3">
           <!-- Worksite Completion -->
           <div class="my-2 mx-3 bg-white shadow h-24 content-center flex-wrap">
-            <worksite-completion />
+            <base-button @:click="alert(ActivationPopUp)">
+              <worksite-completion />
+            </base-button>
           </div>
           <!-- teammate invitation -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
@@ -84,7 +86,6 @@
           </div>
         </div>
       </div>
-      <ActivationPopUp />
       <cc-popup :is-showing-modal="callIncoming" />
     </template>
   </Loader>
@@ -104,7 +105,6 @@ import CompletionSummary from '@/components/reports/CompletionSummary.vue';
 import ParticipationStats from '@/components/reports/OrgParticipationStats.vue';
 import IncidentStatusReport from '@/components/reports/IncidentStatusReport.vue';
 import CallCenterFlow from '@/components/reports/CallCenterFlow.vue';
-import ActivationPopUp from '@/components/reports/ActivationPopUp.vue';
 import DownloadCSV from '@/components/reports/DownloadCSV.vue';
 
 export default {
@@ -121,7 +121,6 @@ export default {
     ParticipationStats,
     IncidentStatusReport,
     CallCenterFlow,
-    ActivationPopUp,
     DownloadCSV,
   },
   data() {
