@@ -14,11 +14,17 @@
     >
       <div
         slot="header"
-        class="flex p-1 justify-start bg-crisiscleanup-dark-400 text-white"
+        class="flex p-1 justify-between bg-crisiscleanup-dark-400 text-white"
       >
-        <base-text variant="body" weight="700" class="m-3 ml-5">
-          Report Activation
-        </base-text>
+        <div class="flex flex-row">
+          <base-text variant="body" weight="700" class="m-3 ml-5">
+            Report Activation
+          </base-text>
+          <base-button
+            :action="() => (isShowingModal = false)"
+            ccu-icon="cancel"
+          ></base-button>
+        </div>
       </div>
       <div class="flex justify-around m-5">
         <base-text variant="body">
@@ -34,12 +40,7 @@
       <div slot="footer" class="flex p-1 justify-center">
         <base-button
           variant="outline"
-          :action="
-            () => {
-              isShowingModal = false;
-            }
-          "
-          text="mmk"
+          :action="() => (isShowingModal = false)"
         ></base-button>
       </div>
     </modal>
