@@ -166,8 +166,7 @@ export default {
         },
         {
           key: 'reports',
-          icon: 'history',
-          text: this.$t('dashboard.reports'),
+          icon: 'reports',
           to: '/reports',
         },
       ];
