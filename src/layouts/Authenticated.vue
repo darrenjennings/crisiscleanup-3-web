@@ -168,6 +168,9 @@ export default {
           key: 'reports',
           icon: 'reports',
           to: '/reports',
+          disabled: !this.currentUser ||
+            !this.currentUser.organization ||
+            this.currentUser.organization.type_t !== 'orgType.government',
         },
       ];
     },
