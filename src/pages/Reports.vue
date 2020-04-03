@@ -34,28 +34,6 @@
       <!-- Report Library -->
       <h1 class="text-xl font-bold m-2 ml-3 pt-5">Report Library</h1>
       <div class="flex flex-row jusity-between">
-        <div class="flex-col w-1/3">
-          <div class="my-2 mx-3 bg-white shadow h-20 content-center flex-wrap">
-            <DownloadCSV />
-          </div>
-        </div>
-      </div>
-      <!-- Favorites -->
-      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Favorites</h1>
-      <!-- <div class="flex flex-row justify-between">
-        First Column
-        <div class="flex-col w-1/3">
-        </div>
-        Second Column
-        <div class="flex-col w-1/3">
-        </div>
-        Third Column
-        <div class="flex-col w-1/3">
-        </div>
-      </div> -->
-      <!-- Report Library -->
-      <h1 class="text-xl font-bold m-2 ml-3 pt-5">Report Library</h1>
-      <div class="flex flex-row jusity-between">
         <!-- First Column -->
         <div class="flex-col w-1/3">
           <!-- Worksite Completion -->
