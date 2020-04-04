@@ -1,15 +1,16 @@
 <template>
   <div>
     <base-button
-      variant="outline"
-      :action="() => (isShowingModal = true)"
-      text="Show Modal"
-    ></base-button>
+      :text="$t('usersVue.request_access')"
+      variant="solid"
+      class="px-3 py-1"
+      :action="() => (showRequestAccessModal = true)"
+    />
     <modal
-      v-if="isShowingModal"
+      v-if="showRequestAccessModal"
       title="Reports Activation"
       modal-classes="w-108"
-      @close="isShowingModal = false"
+      @close="showRequestAccessModal = false"
     >
       <div class="flex justify-around m-5">
         <base-text variant="body">
@@ -25,7 +26,7 @@
       <div slot="footer" class="flex p-1 justify-center">
         <base-button
           variant="outline"
-          :action="() => (isShowingModal = false)"
+          :action="() => (showRequestAccessModal = false)"
         ></base-button>
       </div>
     </modal>
@@ -38,7 +39,7 @@ import VueTypes from 'vue-types';
 export default {
   name: 'ActivationPopUp',
   props: {
-    isShowingModal: VueTypes.bool.def(false),
+    showRequestAccessModal: VueTypes.bool.def(false),
   },
 };
 </script>
