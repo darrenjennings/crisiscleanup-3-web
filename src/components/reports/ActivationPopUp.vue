@@ -2,11 +2,7 @@
   <div>
     <base-button
       variant="outline"
-      :action="
-        () => {
-          isShowingModal = true;
-        }
-      "
+      :action="() => (isShowingModal = true)"
       text="Show Modal"
     ></base-button>
     <modal
