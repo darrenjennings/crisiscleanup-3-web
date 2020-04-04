@@ -62,26 +62,38 @@
         <!-- First Column -->
         <div class="flex-col w-1/3">
           <!-- Worksite Completion -->
-          <div class="my-2 mx-3 bg-white shadow h-24 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+          <div class="flex mt-2 mb-2 mx-3 bg-white shadow h-24 flex-wrap">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <worksite-completion />
             </base-button>
           </div>
           <!-- teammate invitation -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <teammate-invitation />
             </base-button>
           </div>
           <!-- Incident Status Report -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <incident-status-report />
             </base-button>
           </div>
           <!-- Org Participation Status -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <participation-stats />
             </base-button>
           </div>
@@ -90,25 +102,37 @@
         <div class="flex-col w-1/3">
           <!-- Requests -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <requests-card />
             </base-button>
           </div>
           <!-- Completed Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <completion-summary />
             </base-button>
           </div>
           <!-- Volunteer Work Logs -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <volunteer-work-logs />
             </base-button>
           </div>
           <!-- Call Center Flow -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <call-center-flow />
             </base-button>
           </div>
@@ -117,13 +141,19 @@
         <div class="flex-col w-1/3">
           <!-- Unassigned Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <unassigned-worksites />
             </base-button>
           </div>
           <!-- Estimated Commercial Values -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <base-button :action="() => (showRequestAccessModal = true)">
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
               <est-commercial-value />
             </base-button>
           </div>
