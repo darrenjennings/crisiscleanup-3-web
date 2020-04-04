@@ -31,6 +31,31 @@
         <div class="flex-col w-1/3">
         </div>
       </div> -->
+      <!-- Request Access Modal -->
+      <modal
+        v-if="showRequestAccessModal"
+        title="Reports Activation"
+        modal-classes="w-108"
+        @close="showRequestAccessModal = false"
+      >
+        <div class="flex justify-around m-5">
+          <base-text variant="body">
+            Your state does not yet have a subscription to this section.
+            <a
+              href="mailto:aaron@crisiscleanup.org"
+              class="text-crisiscleanup-yellow-900 underline"
+              >Click here</a
+            >
+            to request more information on report access"
+          </base-text>
+        </div>
+        <div slot="footer" class="flex p-1 justify-center">
+          <base-button
+            variant="outline"
+            :action="() => (showRequestAccessModal = false)"
+          ></base-button>
+        </div>
+      </modal>
       <!-- Report Library -->
       <h1 class="text-xl font-bold m-2 ml-3 pt-5">Report Library</h1>
       <div class="flex flex-row jusity-between">
@@ -38,51 +63,69 @@
         <div class="flex-col w-1/3">
           <!-- Worksite Completion -->
           <div class="my-2 mx-3 bg-white shadow h-24 content-center flex-wrap">
-            <base-button @:click="alert(ActivationPopUp)">
+            <base-button :action="() => (showRequestAccessModal = true)">
               <worksite-completion />
             </base-button>
           </div>
           <!-- teammate invitation -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <teammate-invitation />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <teammate-invitation />
+            </base-button>
           </div>
           <!-- Incident Status Report -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <incident-status-report />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <incident-status-report />
+            </base-button>
           </div>
           <!-- Org Participation Status -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <participation-stats />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <participation-stats />
+            </base-button>
           </div>
         </div>
         <!-- Second Column -->
         <div class="flex-col w-1/3">
           <!-- Requests -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <requests-card />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <requests-card />
+            </base-button>
           </div>
           <!-- Completed Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <completion-summary />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <completion-summary />
+            </base-button>
           </div>
           <!-- Volunteer Work Logs -->
           <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <volunteer-work-logs />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <volunteer-work-logs />
+            </base-button>
           </div>
           <!-- Call Center Flow -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <call-center-flow />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <call-center-flow />
+            </base-button>
           </div>
         </div>
         <!-- Third Column -->
         <div class="flex-col w-1/3">
           <!-- Unassigned Worksites -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <unassigned-worksites />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <unassigned-worksites />
+            </base-button>
           </div>
           <!-- Estimated Commercial Values -->
           <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <est-commercial-value />
+            <base-button :action="() => (showRequestAccessModal = true)">
+              <est-commercial-value />
+            </base-button>
           </div>
         </div>
       </div>
@@ -106,6 +149,7 @@ import ParticipationStats from '@/components/reports/OrgParticipationStats.vue';
 import IncidentStatusReport from '@/components/reports/IncidentStatusReport.vue';
 import CallCenterFlow from '@/components/reports/CallCenterFlow.vue';
 import DownloadCSV from '@/components/reports/DownloadCSV.vue';
+import VueTypes from 'vue-types';
 
 export default {
   name: 'Reports',
@@ -127,6 +171,9 @@ export default {
     return {
       loading: false,
     };
+  },
+  props: {
+    showRequestAccessModal: VueTypes.bool.def(false),
   },
   computed: {
     currentUser() {
