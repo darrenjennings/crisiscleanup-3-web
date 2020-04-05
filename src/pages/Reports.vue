@@ -13,7 +13,7 @@
       <h1 class="text-xl font-bold m-2 ml-3">Included</h1>
       <div class="flex flex-row jusity-between">
         <div class="flex-col w-1/3">
-          <div class="my-2 mx-3 bg-white shadow h-20 content-center flex-wrap">
+          <div class="my-4 mx-2 bg-white shadow h-20 content-center flex-wrap">
             <DownloadCSV />
           </div>
         </div>
@@ -62,7 +62,7 @@
         <!-- First Column -->
         <div class="flex-col w-1/3">
           <!-- Worksite Completion -->
-          <div class="flex mt-2 mb-2 mx-3 bg-white shadow h-24 flex-wrap">
+          <div class="flex my-4 mx-2 bg-white shadow h-auto flex-wrap">
             <base-button
               :action="() => (showRequestAccessModal = true)"
               class="text-left"
@@ -70,26 +70,10 @@
               <worksite-completion />
             </base-button>
           </div>
-          <!-- teammate invitation -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <base-button
-              :action="() => (showRequestAccessModal = true)"
-              class="text-left"
-            >
-              <teammate-invitation />
-            </base-button>
-          </div>
-          <!-- Incident Status Report -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <base-button
-              :action="() => (showRequestAccessModal = true)"
-              class="text-left"
-            >
-              <incident-status-report />
-            </base-button>
-          </div>
           <!-- Org Participation Status -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
             <base-button
               :action="() => (showRequestAccessModal = true)"
               class="text-left"
@@ -97,11 +81,35 @@
               <participation-stats />
             </base-button>
           </div>
+          <!-- Incident Status Report -->
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
+              <incident-status-report />
+            </base-button>
+          </div>
+          <!-- Unassigned Worksites -->
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
+              <unassigned-worksites />
+            </base-button>
+          </div>
         </div>
         <!-- Second Column -->
         <div class="flex-col w-1/3">
           <!-- Requests -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
             <base-button
               :action="() => (showRequestAccessModal = true)"
               class="text-left"
@@ -110,7 +118,9 @@
             </base-button>
           </div>
           <!-- Completed Worksites -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
             <base-button
               :action="() => (showRequestAccessModal = true)"
               class="text-left"
@@ -118,17 +128,10 @@
               <completion-summary />
             </base-button>
           </div>
-          <!-- Volunteer Work Logs -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
-            <base-button
-              :action="() => (showRequestAccessModal = true)"
-              class="text-left"
-            >
-              <volunteer-work-logs />
-            </base-button>
-          </div>
           <!-- Call Center Flow -->
-          <div class="my-2 mx-3 bg-white shadow h-32 content-center flex-wrap">
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
             <base-button
               :action="() => (showRequestAccessModal = true)"
               class="text-left"
@@ -136,25 +139,40 @@
               <call-center-flow />
             </base-button>
           </div>
-        </div>
-        <!-- Third Column -->
-        <div class="flex-col w-1/3">
-          <!-- Unassigned Worksites -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
-            <base-button
-              :action="() => (showRequestAccessModal = true)"
-              class="text-left"
-            >
-              <unassigned-worksites />
-            </base-button>
-          </div>
           <!-- Estimated Commercial Values -->
-          <div class="my-2 mx-3 bg-white shadow h-40 content-center flex-wrap">
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
             <base-button
               :action="() => (showRequestAccessModal = true)"
               class="text-left"
             >
               <est-commercial-value />
+            </base-button>
+          </div>
+        </div>
+        <!-- Third Column -->
+        <div class="flex-col w-1/3">
+          <!-- Volunteer Work Logs -->
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
+              <volunteer-work-logs />
+            </base-button>
+          </div>
+          <!-- teammate invitation -->
+          <div
+            class="my-4 mx-2 bg-white shadow h-auto content-center flex-wrap"
+          >
+            <base-button
+              :action="() => (showRequestAccessModal = true)"
+              class="text-left"
+            >
+              <teammate-invitation />
             </base-button>
           </div>
         </div>
